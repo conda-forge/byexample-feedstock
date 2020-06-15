@@ -37,7 +37,7 @@ test:
 
 about:
   home: http://github.com/byexamples/byexample
-  license: GPL-3.0
+  license: GPL-3.0-only
   license_file: LICENSE
   summary: Mix ordinary text and snippets of code in the same file and execute them as regression tests
   description: |
