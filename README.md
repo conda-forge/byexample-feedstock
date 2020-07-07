@@ -3,9 +3,9 @@ About byexample
 
 Home: http://github.com/byexamples/byexample
 
-Package license: GPL-3.0
+Package license: GPL-3.0-only
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: Mix ordinary text and snippets of code in the same file and execute them as regression tests
 
