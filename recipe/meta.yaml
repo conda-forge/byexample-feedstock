@@ -8,8 +8,6 @@ package:
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: 4b449223072b4edf735949746ca4781ef5ab5ff7010fc297a05031b59aa53cfe
-  patches:
-    - 0001-use-collections.abc.patch
 
 build:
   # https://github.com/byexamples/byexample/issues/90; once this is fixed, this should be made noarch: python
