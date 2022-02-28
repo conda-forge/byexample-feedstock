@@ -1,5 +1,5 @@
 {% set name = "byexample" %}
-{% set version = "10.4.0" %}
+{% set version = "10.5.0" %}
 
 package:
   name: {{ name }}
@@ -7,14 +7,14 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: b82fa804ef9540e5bb21da30e2c7f30e2429b77e96e071ca897105611faaa53c
+  sha256: 0be5c9c25fbc4fd8eace47ce665efab430b17977b24d97e9e76f840e2d963078
   patches:
     - 0001-use-collections.abc.patch
 
 build:
   # https://github.com/byexamples/byexample/issues/90; once this is fixed, this should be made noarch: python
   skip: true  # [win]
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv
   entry_points:
     - byexample = byexample.byexample:main
