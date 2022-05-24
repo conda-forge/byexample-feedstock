@@ -1,5 +1,5 @@
 {% set name = "byexample" %}
-{% set version = "10.5.2" %}
+{% set version = "10.5.3" %}
 
 package:
   name: {{ name }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 0984f2551115aa5a76f8652038a7bc86e3a95ff875cf6cc0294be3876f6e895e
+  sha256: ca5d6d384a3841a359766f9eb60368484a6cac8d46b87f0f14c56c704ae3ade3
 
 build:
   # https://github.com/byexamples/byexample/issues/90; once this is fixed, this should be made noarch: python
   skip: true  # [win]
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv
   entry_points:
     - byexample = byexample.byexample:main
