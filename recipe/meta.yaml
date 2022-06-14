@@ -1,5 +1,5 @@
 {% set name = "byexample" %}
-{% set version = "10.5.4" %}
+{% set version = "10.5.6" %}
 
 package:
   name: {{ name }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: e6f1534c45f63626fd6581eb56dc173a4b87d8a81c75a0848a653c24029ef074
+  sha256: d43b7972e59c1d714f280434eb3797a5ace96c299ff41bef6f84e12837c930a3
 
 build:
   # https://github.com/byexamples/byexample/issues/90; once this is fixed, this should be made noarch: python
