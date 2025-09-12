@@ -20,6 +20,7 @@ build:
 requirements:
   host:
     - python
+    - setuptools
     - pip
   run:
     - python
