@@ -6,13 +6,13 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: d43b7972e59c1d714f280434eb3797a5ace96c299ff41bef6f84e12837c930a3
 
 build:
   # https://github.com/byexamples/byexample/issues/90; once this is fixed, this should be made noarch: python
   skip: true  # [win]
-  number: 2
+  number: 3
   script: {{ PYTHON }} -m pip install . -vv
   entry_points:
     - byexample = byexample.byexample:main
@@ -20,6 +20,7 @@ build:
 requirements:
   host:
     - python
+    - setuptools
     - pip
   run:
     - python
