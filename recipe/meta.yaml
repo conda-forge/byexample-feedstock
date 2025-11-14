@@ -12,12 +12,15 @@ source:
 build:
   # https://github.com/byexamples/byexample/issues/90; once this is fixed, this should be made noarch: python
   skip: true  # [win]
-  number: 3
+  number: 4
   script: {{ PYTHON }} -m pip install . -vv
   entry_points:
     - byexample = byexample.byexample:main
 
 requirements:
+  build:                                  # [build_platform != target_platform]
+    - python                              # [build_platform != target_platform]
+    - cross-python_{{ target_platform }}  # [build_platform != target_platform]
   host:
     - python
     - setuptools
