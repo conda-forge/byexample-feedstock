@@ -34,6 +34,7 @@ requirements:
     # optional requirements from setup.py
     - tqdm 4.*
     - pygments 2.*
+    - termscraper 0.10.*
 
 test:
   commands:
