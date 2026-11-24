@@ -27,6 +27,7 @@ requirements:
     - pip
   run:
     - python
+    - importlib_resources
     # requirements from setup.py
     - appdirs >=1.4.3,<2
     - bracex >=2.1.0,<3
